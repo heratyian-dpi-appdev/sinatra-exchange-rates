@@ -1,0 +1,4 @@
+<h1>Convert <%= @from_currency %> to <%= @to_currency %></h1>
+1 <%= @from_currency %> equals <%= @parsed_response.dig("info", "rate") %>  <%= @to_currency %>.
+
+Go <a href="/<%= @from_currency %>">back</a>.

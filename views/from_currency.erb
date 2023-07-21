@@ -1,0 +1,9 @@
+<h1>Convert <%= @from_currency %></h1>
+Go <a href="/">back</a>
+<ul>
+  <% @parsed_response.dig("symbols").keys.each do |currency_symbol| %>
+    <li>
+      <a href="/<%= @from_currency %>/<%= currency_symbol %>">Convert 1 <%= @from_currency %> to <%= currency_symbol %>...</a>
+    </li>
+  <% end %>
+</ul>
